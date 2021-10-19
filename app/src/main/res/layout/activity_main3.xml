@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity3"
+    android:id="@+id/cl00_main3">
+
+    <LinearLayout
+        android:id="@+id/ll00_main3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f44f36"
+
+        app:layout_constraintLeft_toLeftOf="@+id/cl00_main3"
+        app:layout_constraintRight_toRightOf="@+id/cl00_main3"
+        app:layout_constraintTop_toTopOf="@+id/cl00_main3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Imagem"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/bc00_main3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt00_main3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SCAN"/>
+
+        <Button
+            android:id="@+id/bt01_main3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SCAN_2"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
